@@ -19,3 +19,6 @@ def isAnagram(self, s: str, t: str) -> bool:
         else: #char in t does not exist in s, not anagram
             return False
     return True
+
+def isAnagram_2(self, s: str, t: str) -> bool:
+    return sorted(s) == sorted(t)
