@@ -17,3 +17,18 @@ class Solution:
             hash_map.pop(max_freq)
             
         return output
+
+    def topKFrequent_2(self, nums: list[int], k: int) -> list[int]:
+        
+        hash_map = {}
+        
+        # counting freq of all numbers
+        for num in nums:
+            if num not in hash_map:
+                hash_map[num] = 1
+            else:
+                hash_map[num] += 1
+        
+        hash_map = sorted(hash_map, key = hash_map.get, reverse = True)
+        
+        return hash_map[:k]
