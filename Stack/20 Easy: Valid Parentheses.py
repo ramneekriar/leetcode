@@ -33,3 +33,33 @@ class Solution:
         if stack:
             return 'NO'
         return 'YES'
+
+    def matchingParenthesis2(self, s: list[str]) -> list[str]:
+        stack = []
+        result = []
+        bracket_dict = {"}": "{", "]": "[", ")": "("}
+        for braceSet in s:
+            for char in braceSet:
+                if char in {'{', '[', '('}:
+                    stack.append(char)
+                elif char in {'}', ']', ')'}:
+                    if not stack:
+                        result.append('NO')
+                    elif bracket_dict[char] == stack[-1]:
+                        stack.pop() 
+                    else:
+                        result.append('NO')
+                else:
+                    result.append('NO')
+            if stack:
+                result.append('NO')
+            else:
+                result.append('YES')
+
+            stack = []
+        return result
+
+if __name__ == '__main__':
+    s = Solution()
+    ans = s.matchingParenthesis2(["[]()[[()]]", "()(", "[][][]"])
+    print(ans)
