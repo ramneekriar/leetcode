@@ -1,0 +1,3 @@
+<h2><a href="https://leetcode.com/problems/two-sum/">1. Two Sum</a></h2><h3>Easy</h3>
+
+<p>Create a hashmap to store the number as the key and its index as the value. As we enumerate through the given nums, calculate the difference from target and current n. If this difference exists in the hashmap, we return the index at diff and the current index we are at in a list. Otherwise, add the current n and its index to the hashmap.</p>
