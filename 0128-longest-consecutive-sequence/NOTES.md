@@ -1,0 +1,3 @@
+<h2><a href="https://leetcode.com/problems/longest-consecutive-sequence/description/">128. Longest Consecutive Sequence</a></h2><h3>Medium</h3>
+
+<p>First, turn given nums into a  set so that each value becomes unique. Intialize res variable to 0. Iterate over nums and check that (n - 1) is not in nums. This means that this is the starting point of our sequence since a number before that does not exist in nums. Initialize variable longest to 1. While (n + longest) exists in our set, we keep incrementing longest. Once we exit out of this while loop, we store the max result of current value in res and longest into res. At the end, return the value of res.</p>
