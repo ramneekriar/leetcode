@@ -1,0 +1,3 @@
+<h2><a href="https://leetcode.com/problems/product-of-array-except-self/description/">238. Product of Array Except Self</a></h2><h3>Medium</h3>
+
+<p>Create a answer array the size of nums filled with 1s. Set our prefix variable to 1. Iterate over given nums, first setting the value of our answer at index with the value of prefix, then multiply prefix with the current value of nums. This way the product at answer[i] does not include the value at nums[i]. Same idea for postfix, meaning multiplying backwards through the array. Set postfix variable to 1. Multiply the value of answer at index with the value of postfix, then multiply postfix with the current value at nums. Return the answer array.</p>

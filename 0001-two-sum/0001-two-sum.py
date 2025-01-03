@@ -8,3 +8,5 @@ class Solution:
                 return [hashmap[diff], i]
             else:
                 hashmap[n] = i
+
+# Time = O(n), Space = O(n)

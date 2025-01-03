@@ -18,3 +18,5 @@ class Solution:
                 return False
         
         return True
+    
+# Time = O(n), Space = O(n)
