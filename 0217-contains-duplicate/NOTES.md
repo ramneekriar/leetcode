@@ -1,0 +1,3 @@
+<h2><a href="https://leetcode.com/problems/contains-duplicate/description/">217. Contains Duplicate</a></h2><h3>Easy</h3>
+
+<p>Create a set called seen. Iterate over given nums. If number has not been seen (it is not in the set seen), then add it to the set. If it already exists in our set, then return True as now a value does appear twice in the array. After iterating if a duplicate does not exist, then we return False.</p>
