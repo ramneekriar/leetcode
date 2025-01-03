@@ -1,0 +1,3 @@
+<h2><a href="https://leetcode.com/problems/valid-anagram/">242. Valid Anagram</a></h2><h3>Easy</h3>
+
+<p>First, check if the length of both two strings are equal as each letter must appear exactly once. If so, create a freq hashmap where the key will be the letter and the value will be the freq of it encountered. Iterate over the first string and store the freq. Iterate over the second string and if letter is in our freq hashmap and the freq currently is greater than 0, it is safe to decrement from it. Otherwise, it means either the letter encountered is not in the hashmap or the freq of that letter is currently 0 which means the strings are not anagrams of each other. So we return False. Outside of this loop, we can return True as s and t are anagrams of each other.</p>
