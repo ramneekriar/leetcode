@@ -1,0 +1,3 @@
+<h2><a href="https://leetcode.com/problems/valid-sudoku/">36. Valid Sudoku</a></h2><h3>Medium</h3>
+
+<p>Create 3 defaultdicts as sets for rows, cols, and lastly the squares. Iterate over the board and continue if the value is equal to a period. If the current value at the board already exists in our rows hashmap, cols hashmap, or squares[(r//3, c//3)] hashmap, then we return False since this is not a valid sudoku board and a value has been repeated twice. Otherwise, we simply add the current board value to the rows, cols, and squares hashmap at their respective keys. Outside the for loop, return True indicating that this is a valid sudoku board.</p>
