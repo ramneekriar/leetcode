@@ -15,3 +15,6 @@ class Solution:
                 res.append(n)
                 if len(res) == k:
                     return res
+
+# Time = O(n), Space = O(n)
+# * Even though there is a double for loop, we are still accessing each element only once in the worse case scenario
