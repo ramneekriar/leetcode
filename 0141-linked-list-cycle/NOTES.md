@@ -1,0 +1,3 @@
+<h2><a href="https://leetcode.com/problems/linked-list-cycle/">141. Linked List Cycle</a></h2><h3>Easy</h3>
+
+<p>Initalize both a slow and fast pointer to head. The slow pointer will move by one node while the fast pointer will move by 2 nodes. The idea is that if a cycle exists, at some point, the fast and slow pointer will meet and be equal to each other. So while the node at fast exists and the next node from fast exists, increment the slow pointer by 1 and increment the fast pointer by 2. If the slow and fast pointer are equal to each other, then return true. If the while loop exits because either fast or fast.next do not exist, this means that a cycle does not exist and we can return false.</p>
