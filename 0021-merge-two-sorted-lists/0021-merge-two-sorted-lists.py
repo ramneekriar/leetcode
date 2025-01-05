@@ -1,0 +1,39 @@
+# Definition for singly-linked list.
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+class Solution:
+    def mergeTwoLists_Recursive(self, list1: ListNode, list2: ListNode) -> ListNode:
+        if not list1:
+            return list2
+        if not list2:
+            return list1
+        
+        if list1.val < list2.val:
+            list1.next = self.mergeTwoLists(list1.next, list2)
+            return list1
+        else:
+            list2.next = self.mergeTwoLists(list1, list2.next)
+            return list2
+    
+# Time = O(n + m), Space = O(1)
+    
+    def mergeTwoLists_Iterative(self, list1: ListNode, list2: ListNode) -> ListNode:
+        dummy = node = ListNode()
+
+        while list1 and list2:
+            if list1.val <= list2.val:
+                node.next = list1list1 = list1.next
+            else:
+                node.next = list2
+                list2 = list2.next
+
+            node = node.next
+
+        node.next = list1 or list2
+
+        return dummy.next
+
+# Time = O(n + m), Space = O(n + m)
