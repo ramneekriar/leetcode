@@ -1,7 +1,5 @@
 from typing import Optional
 
-from networkx import second_order_centrality
-
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
