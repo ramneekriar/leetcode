@@ -20,7 +20,7 @@ class Solution:
         
         return result
     
-# Time = O(n), Space = O(n)
+# Time = O(n), Space = O(n) -> O(Limit + 1 + m + q) where limit + 1 is number of balls and m is the number of distinct colors and q is the number of queries (for the result array)
     
 sol = Solution()
 print("Begin testing...")
