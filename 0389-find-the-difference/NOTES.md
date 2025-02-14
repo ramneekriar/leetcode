@@ -1,0 +1,3 @@
+<h2><a href="https://leetcode.com/problems/find-the-difference/description/">389. Find the Difference</a></h2><h3>Easy</h3>
+
+<p>Create a res variable and set it to 0. We can perform XOR on the ascii values of the letters. This will cancel out the same letter values in each given string, and we will be left with the different letter that appears in t. Run a loop over the letters in s since we know that letter t is the length of s + an extra character. In res, continue to xor res with the ascii value of s[i] and t[i]. Outside of the loop, we still have to account with the one extra letter in t. In a final variable, hold the result of xor res with the last letter in t, so ord(t[-1]). Then convert that back into a character and return it.</p>
